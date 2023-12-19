@@ -98,23 +98,79 @@ struct MyWidgetEntryView : View {
     }
 }
 
+struct MyWidgetEntryView1 : View {
+    var entry: Provider.Entry
+
+    var body: some View {
+        MyWidgetEntryView(entry: entry)
+    }
+}
+
+protocol SimpleProtocol {
+    associatedtype Content:View
+     var this:Content {get}
+}
+
+struct TempTest<T:SimpleProtocol> : View {
+    
+    var item:T
+    var body: some View {
+        return item.this
+    }
+}
+
 struct MyWidget: Widget {
     //唯一标识
     let kind: String = "MyWidget"
 
+    //支持的环境
+    @Environment(\.widgetFamily) var widgetFamily
+    
     var body: some WidgetConfiguration {
+        
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            if #available(iOS 17.0, *) {
-                MyWidgetEntryView(entry: entry)
-                    .containerBackground(.fill.tertiary, for: .widget)
-            } else {
-                MyWidgetEntryView(entry: entry)
-                    .padding()
-                    .background()
-            }
+            self.firstInit(entry: entry)
+            //里面需要返回view 
+//            if #available(iOS 17.0, *) {
+//                MyWidgetEntryView(entry: entry)
+//                    .containerBackground(.fill.tertiary, for: .widget)
+//            } else {
+//                MyWidgetEntryView(entry: entry)
+//                    .padding()
+//                    .background()
+//            }
         }
         .configurationDisplayName("王琨琨")
         .description("我的第一个小组件")
+        /*
+         支持的屏幕
+         14.0 3个
+         15.0 1个 针对iPadOS 和 macos
+         16.0 3个 针对锁屏 条形、圆形、矩形
+         17.0 可交互
+         */
+        .supportedFamilies([.systemSmall,.systemMedium,.systemLarge, .accessoryInline,.accessoryCircular,.accessoryRectangular])
+        
+    }
+    
+    //any 类型擦除  some来修饰的返回值只能返回同一种类型 使用any 上面没法用，只能使用anyview来包裹 没有找到好的方法
+    func firstInit(entry: Provider.Entry) -> AnyView {
+        switch widgetFamily {
+        case .accessoryInline:
+            AnyView(MyWidgetEntryView1(entry: entry)
+                .padding()
+                .background())
+        default:
+//            if #available(iOS 17.0, *) {
+//                
+//                MyWidgetEntryView(entry: entry)
+//                    .containerBackground(.fill.tertiary, for: .widget)
+//            } else {
+            AnyView(MyWidgetEntryView(entry: entry)
+                    .padding()
+                    .background())
+//            }
+        }
     }
 }
 
