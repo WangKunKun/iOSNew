@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81D0F5962B31662100375410 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F5952B31662100375410 /* AppDelegate.swift */; };
+		81D0F5982B31662100375410 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F5972B31662100375410 /* SceneDelegate.swift */; };
+		81D0F59A2B31662100375410 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F5992B31662100375410 /* ViewController.swift */; };
+		81D0F59D2B31662100375410 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D0F59B2B31662100375410 /* Main.storyboard */; };
+		81D0F59F2B31662200375410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D0F59E2B31662200375410 /* Assets.xcassets */; };
+		81D0F5A22B31662200375410 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81D0F5A02B31662200375410 /* LaunchScreen.storyboard */; };
+		81D0F5AD2B31662200375410 /* FristWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F5AC2B31662200375410 /* FristWidgetTests.swift */; };
+		81D0F5B72B31662200375410 /* FristWidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F5B62B31662200375410 /* FristWidgetUITests.swift */; };
+		81D0F5B92B31662200375410 /* FristWidgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F5B82B31662200375410 /* FristWidgetUITestsLaunchTests.swift */; };
+		81D0F5CC2B31665D00375410 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D0F5CB2B31665D00375410 /* WidgetKit.framework */; };
+		81D0F5CE2B31665D00375410 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D0F5CD2B31665D00375410 /* SwiftUI.framework */; };
+		81D0F5D12B31665D00375410 /* MyWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F5D02B31665D00375410 /* MyWidgetBundle.swift */; };
+		81D0F5D32B31665D00375410 /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D0F5D22B31665D00375410 /* MyWidget.swift */; };
+		81D0F5D52B31665E00375410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81D0F5D42B31665E00375410 /* Assets.xcassets */; };
+		81D0F5D92B31665E00375410 /* MyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 81D0F5C92B31665D00375410 /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81D0F5A92B31662200375410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81D0F58A2B31662100375410 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D0F5912B31662100375410;
+			remoteInfo = FristWidget;
+		};
+		81D0F5B32B31662200375410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81D0F58A2B31662100375410 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D0F5912B31662100375410;
+			remoteInfo = FristWidget;
+		};
+		81D0F5D72B31665E00375410 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81D0F58A2B31662100375410 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81D0F5C82B31665D00375410;
+			remoteInfo = MyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		81D0F5DD2B31665E00375410 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				81D0F5D92B31665E00375410 /* MyWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		81D0F5922B31662100375410 /* FristWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FristWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D0F5952B31662100375410 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81D0F5972B31662100375410 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		81D0F5992B31662100375410 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81D0F59C2B31662100375410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81D0F59E2B31662200375410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D0F5A12B31662200375410 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81D0F5A32B31662200375410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81D0F5A82B31662200375410 /* FristWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FristWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D0F5AC2B31662200375410 /* FristWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FristWidgetTests.swift; sourceTree = "<group>"; };
+		81D0F5B22B31662200375410 /* FristWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FristWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D0F5B62B31662200375410 /* FristWidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FristWidgetUITests.swift; sourceTree = "<group>"; };
+		81D0F5B82B31662200375410 /* FristWidgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FristWidgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		81D0F5C92B31665D00375410 /* MyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		81D0F5CB2B31665D00375410 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		81D0F5CD2B31665D00375410 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		81D0F5D02B31665D00375410 /* MyWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidgetBundle.swift; sourceTree = "<group>"; };
+		81D0F5D22B31665D00375410 /* MyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidget.swift; sourceTree = "<group>"; };
+		81D0F5D42B31665E00375410 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81D0F5D62B31665E00375410 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81D0F58F2B31662100375410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5A52B31662200375410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5AF2B31662200375410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5C62B31665D00375410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D0F5CE2B31665D00375410 /* SwiftUI.framework in Frameworks */,
+				81D0F5CC2B31665D00375410 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81D0F5892B31662100375410 = {
+			isa = PBXGroup;
+			children = (
+				81D0F5942B31662100375410 /* FristWidget */,
+				81D0F5AB2B31662200375410 /* FristWidgetTests */,
+				81D0F5B52B31662200375410 /* FristWidgetUITests */,
+				81D0F5CF2B31665D00375410 /* MyWidget */,
+				81D0F5CA2B31665D00375410 /* Frameworks */,
+				81D0F5932B31662100375410 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81D0F5932B31662100375410 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81D0F5922B31662100375410 /* FristWidget.app */,
+				81D0F5A82B31662200375410 /* FristWidgetTests.xctest */,
+				81D0F5B22B31662200375410 /* FristWidgetUITests.xctest */,
+				81D0F5C92B31665D00375410 /* MyWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81D0F5942B31662100375410 /* FristWidget */ = {
+			isa = PBXGroup;
+			children = (
+				81D0F5952B31662100375410 /* AppDelegate.swift */,
+				81D0F5972B31662100375410 /* SceneDelegate.swift */,
+				81D0F5992B31662100375410 /* ViewController.swift */,
+				81D0F59B2B31662100375410 /* Main.storyboard */,
+				81D0F59E2B31662200375410 /* Assets.xcassets */,
+				81D0F5A02B31662200375410 /* LaunchScreen.storyboard */,
+				81D0F5A32B31662200375410 /* Info.plist */,
+			);
+			path = FristWidget;
+			sourceTree = "<group>";
+		};
+		81D0F5AB2B31662200375410 /* FristWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				81D0F5AC2B31662200375410 /* FristWidgetTests.swift */,
+			);
+			path = FristWidgetTests;
+			sourceTree = "<group>";
+		};
+		81D0F5B52B31662200375410 /* FristWidgetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				81D0F5B62B31662200375410 /* FristWidgetUITests.swift */,
+				81D0F5B82B31662200375410 /* FristWidgetUITestsLaunchTests.swift */,
+			);
+			path = FristWidgetUITests;
+			sourceTree = "<group>";
+		};
+		81D0F5CA2B31665D00375410 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81D0F5CB2B31665D00375410 /* WidgetKit.framework */,
+				81D0F5CD2B31665D00375410 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81D0F5CF2B31665D00375410 /* MyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				81D0F5D02B31665D00375410 /* MyWidgetBundle.swift */,
+				81D0F5D22B31665D00375410 /* MyWidget.swift */,
+				81D0F5D42B31665E00375410 /* Assets.xcassets */,
+				81D0F5D62B31665E00375410 /* Info.plist */,
+			);
+			path = MyWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81D0F5912B31662100375410 /* FristWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D0F5BC2B31662200375410 /* Build configuration list for PBXNativeTarget "FristWidget" */;
+			buildPhases = (
+				81D0F58E2B31662100375410 /* Sources */,
+				81D0F58F2B31662100375410 /* Frameworks */,
+				81D0F5902B31662100375410 /* Resources */,
+				81D0F5DD2B31665E00375410 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D0F5D82B31665E00375410 /* PBXTargetDependency */,
+			);
+			name = FristWidget;
+			productName = FristWidget;
+			productReference = 81D0F5922B31662100375410 /* FristWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81D0F5A72B31662200375410 /* FristWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D0F5BF2B31662200375410 /* Build configuration list for PBXNativeTarget "FristWidgetTests" */;
+			buildPhases = (
+				81D0F5A42B31662200375410 /* Sources */,
+				81D0F5A52B31662200375410 /* Frameworks */,
+				81D0F5A62B31662200375410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D0F5AA2B31662200375410 /* PBXTargetDependency */,
+			);
+			name = FristWidgetTests;
+			productName = FristWidgetTests;
+			productReference = 81D0F5A82B31662200375410 /* FristWidgetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		81D0F5B12B31662200375410 /* FristWidgetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D0F5C22B31662200375410 /* Build configuration list for PBXNativeTarget "FristWidgetUITests" */;
+			buildPhases = (
+				81D0F5AE2B31662200375410 /* Sources */,
+				81D0F5AF2B31662200375410 /* Frameworks */,
+				81D0F5B02B31662200375410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81D0F5B42B31662200375410 /* PBXTargetDependency */,
+			);
+			name = FristWidgetUITests;
+			productName = FristWidgetUITests;
+			productReference = 81D0F5B22B31662200375410 /* FristWidgetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		81D0F5C82B31665D00375410 /* MyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81D0F5DA2B31665E00375410 /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */;
+			buildPhases = (
+				81D0F5C52B31665D00375410 /* Sources */,
+				81D0F5C62B31665D00375410 /* Frameworks */,
+				81D0F5C72B31665D00375410 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWidgetExtension;
+			productName = MyWidgetExtension;
+			productReference = 81D0F5C92B31665D00375410 /* MyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81D0F58A2B31662100375410 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					81D0F5912B31662100375410 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					81D0F5A72B31662200375410 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 81D0F5912B31662100375410;
+					};
+					81D0F5B12B31662200375410 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 81D0F5912B31662100375410;
+					};
+					81D0F5C82B31665D00375410 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 81D0F58D2B31662100375410 /* Build configuration list for PBXProject "FristWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81D0F5892B31662100375410;
+			productRefGroup = 81D0F5932B31662100375410 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81D0F5912B31662100375410 /* FristWidget */,
+				81D0F5A72B31662200375410 /* FristWidgetTests */,
+				81D0F5B12B31662200375410 /* FristWidgetUITests */,
+				81D0F5C82B31665D00375410 /* MyWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81D0F5902B31662100375410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D0F5A22B31662200375410 /* LaunchScreen.storyboard in Resources */,
+				81D0F59F2B31662200375410 /* Assets.xcassets in Resources */,
+				81D0F59D2B31662100375410 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5A62B31662200375410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5B02B31662200375410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5C72B31665D00375410 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D0F5D52B31665E00375410 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81D0F58E2B31662100375410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D0F59A2B31662100375410 /* ViewController.swift in Sources */,
+				81D0F5962B31662100375410 /* AppDelegate.swift in Sources */,
+				81D0F5982B31662100375410 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5A42B31662200375410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D0F5AD2B31662200375410 /* FristWidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5AE2B31662200375410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D0F5B72B31662200375410 /* FristWidgetUITests.swift in Sources */,
+				81D0F5B92B31662200375410 /* FristWidgetUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81D0F5C52B31665D00375410 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D0F5D12B31665D00375410 /* MyWidgetBundle.swift in Sources */,
+				81D0F5D32B31665D00375410 /* MyWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81D0F5AA2B31662200375410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D0F5912B31662100375410 /* FristWidget */;
+			targetProxy = 81D0F5A92B31662200375410 /* PBXContainerItemProxy */;
+		};
+		81D0F5B42B31662200375410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D0F5912B31662100375410 /* FristWidget */;
+			targetProxy = 81D0F5B32B31662200375410 /* PBXContainerItemProxy */;
+		};
+		81D0F5D82B31665E00375410 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81D0F5C82B31665D00375410 /* MyWidgetExtension */;
+			targetProxy = 81D0F5D72B31665E00375410 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		81D0F59B2B31662100375410 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81D0F59C2B31662100375410 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81D0F5A02B31662200375410 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81D0F5A12B31662200375410 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81D0F5BA2B31662200375410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81D0F5BB2B31662200375410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81D0F5BD2B31662200375410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FristWidget/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.wk.widget.FristWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81D0F5BE2B31662200375410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FristWidget/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.wk.widget.FristWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81D0F5C02B31662200375410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.wk.widget.FristWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FristWidget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FristWidget";
+			};
+			name = Debug;
+		};
+		81D0F5C12B31662200375410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.wk.widget.FristWidgetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FristWidget.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FristWidget";
+			};
+			name = Release;
+		};
+		81D0F5C32B31662200375410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.wk.widget.FristWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FristWidget;
+			};
+			name = Debug;
+		};
+		81D0F5C42B31662200375410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.wk.widget.FristWidgetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FristWidget;
+			};
+			name = Release;
+		};
+		81D0F5DB2B31665E00375410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.wk.widget.FristWidget.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81D0F5DC2B31665E00375410 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.wk.widget.FristWidget.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81D0F58D2B31662100375410 /* Build configuration list for PBXProject "FristWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D0F5BA2B31662200375410 /* Debug */,
+				81D0F5BB2B31662200375410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D0F5BC2B31662200375410 /* Build configuration list for PBXNativeTarget "FristWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D0F5BD2B31662200375410 /* Debug */,
+				81D0F5BE2B31662200375410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D0F5BF2B31662200375410 /* Build configuration list for PBXNativeTarget "FristWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D0F5C02B31662200375410 /* Debug */,
+				81D0F5C12B31662200375410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D0F5C22B31662200375410 /* Build configuration list for PBXNativeTarget "FristWidgetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D0F5C32B31662200375410 /* Debug */,
+				81D0F5C42B31662200375410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81D0F5DA2B31665E00375410 /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81D0F5DB2B31665E00375410 /* Debug */,
+				81D0F5DC2B31665E00375410 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81D0F58A2B31662100375410 /* Project object */;
+}
