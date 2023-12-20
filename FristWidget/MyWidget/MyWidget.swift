@@ -154,22 +154,18 @@ struct MyWidget: Widget {
     }
     
     //any 类型擦除  some来修饰的返回值只能返回同一种类型 使用any 上面没法用，只能使用anyview来包裹 没有找到好的方法
-    func firstInit(entry: Provider.Entry) -> AnyView {
+    //使用ViewBuilder 可以解决 返回值为多种不同类型的view时，只能使用any view作为返回值的问题
+    @ViewBuilder
+    func firstInit(entry: Provider.Entry) -> some View {
         switch widgetFamily {
         case .accessoryInline:
-            AnyView(MyWidgetEntryView1(entry: entry)
+            MyWidgetEntryView1(entry: entry)
                 .padding()
-                .background())
+                .background()
         default:
-//            if #available(iOS 17.0, *) {
-//                
-//                MyWidgetEntryView(entry: entry)
-//                    .containerBackground(.fill.tertiary, for: .widget)
-//            } else {
-            AnyView(MyWidgetEntryView(entry: entry)
+            MyWidgetEntryView(entry: entry)
                     .padding()
-                    .background())
-//            }
+                    .background()
         }
     }
 }
