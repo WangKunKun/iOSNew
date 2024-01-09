@@ -26,6 +26,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		81635F3E2B4BBCA4004A783D /* ShapeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeBuilder.swift; sourceTree = "<group>"; };
+		81635F3F2B4BBCA4004A783D /* BuiltShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltShape.swift; sourceTree = "<group>"; };
+		81635F402B4BBCA4004A783D /* EmptyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyShape.swift; sourceTree = "<group>"; };
+		81635F412B4BBCA4004A783D /* InsettableShapeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsettableShapeBuilder.swift; sourceTree = "<group>"; };
+		81635F422B4BBCA4004A783D /* EitherShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitherShape.swift; sourceTree = "<group>"; };
 		81D7A1D82B3E9760001ED58B /* DataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
 		81D7A1DB2B3E9760001ED58B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		81D7A1E22B3E9776001ED58B /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
@@ -44,6 +49,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81635F3D2B4BBCA4004A783D /* ShapeBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				81635F3E2B4BBCA4004A783D /* ShapeBuilder.swift */,
+				81635F3F2B4BBCA4004A783D /* BuiltShape.swift */,
+				81635F402B4BBCA4004A783D /* EmptyShape.swift */,
+				81635F412B4BBCA4004A783D /* InsettableShapeBuilder.swift */,
+				81635F422B4BBCA4004A783D /* EitherShape.swift */,
+			);
+			path = ShapeBuilder;
+			sourceTree = "<group>";
+		};
 		81D7A1CF2B3E9760001ED58B = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +80,7 @@
 		81D7A1DA2B3E9760001ED58B /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				81635F3D2B4BBCA4004A783D /* ShapeBuilder */,
 				81D7A1E82B3EBF83001ED58B /* 链表 */,
 				81D7A1DB2B3E9760001ED58B /* main.swift */,
 			);
